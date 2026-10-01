@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "DeletionRequest": {
+      "title": "DeletionRequest",
+      "description": "User request for account deletion",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "format": "email" },
+        "deviceId": { "type": "string" },
+        "reason": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["email", "deviceId", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/deletionRequests/{requestId}": {
+      "schema": "DeletionRequest",
+      "description": "Collection of deletion requests"
+    }
+  }
+}

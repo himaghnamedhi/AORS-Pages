@@ -1,36 +1,102 @@
 /* ==========================================================================
-   AORS — Automated OTP Relay System
-   Global Design System & Stylesheet (style.css)
-   Developer: Himaaghna Medhi
-   Aesthetic: CyberIndigo (#4F46E5) / ElectricCyan (#00FFFF) / Deep Obsidian
+   AORS — Minimalist Design System
    ========================================================================== */
 
 :root {
-  --bg-obsidian: #06070E;
-  --bg-midnight: #0B0D19;
-  --bg-elevated: rgba(15, 18, 36, 0.68);
-  --bg-elevated-hover: rgba(21, 25, 50, 0.78);
-  --bg-glass-subtle: rgba(11, 13, 25, 0.55);
-  --text-primary: #F8FAFC;
-  --text-secondary: #94A3B8;
-  --text-muted: #64748B;
-  --accent-cyan: #4F46E5;
-  --accent-cyan-dim: rgba(79, 70, 229, 0.14);
-  --accent-cyan-border: rgba(79, 70, 229, 0.35);
-  --accent-indigo: #4F46E5;
-  --accent-indigo-dim: rgba(79, 70, 229, 0.18);
-  --accent-indigo-border: rgba(79, 70, 229, 0.4);
-  --status-emerald: #10B981;
-  --status-amber: #F59E0B;
-  --status-rose: #F43F5E;
-  --border-hairline: rgba(255, 255, 255, 0.08);
-  --border-subtle: rgba(148, 163, 184, 0.14);
-  --font-display: sans-serif;
-  --font-sans: sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
-  --container-max: 1280px;
-  --header-height: 72px;
-  --radius-card: 16px;
-  --radius-inner: 10px;
-  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --bg-primary: #0A0A0A;
+  --bg-surface: #111111;
+  --text-primary: #F5F5F5;
+  --text-secondary: #8A8A8A;
+  --border-color: #242424;
+  --accent: #4F46E5;
+  
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0A0A0A;
+  color: #F5F5F5;
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--text-primary);
+}
+
+nav a {
+  padding: 0.5rem;
+  margin: -0.5rem;
+}
+
+button {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  border-color: var(--text-secondary);
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+  border-color: #4338ca;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.1rem; }
+h2 { font-size: 1.5rem; }
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+main p {
+  text-align: justify;
+}
+
+div:nth-of-type(1) {
+  font-family: var(--font-sans) !important;
 }
