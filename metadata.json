@@ -1,0 +1,6 @@
+{
+  "name": "AORS — Automated OTP Relay System",
+  "description": "Secure, encrypted, ephemeral OTP relay for your devices. Developed by Himaaghna Medhi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

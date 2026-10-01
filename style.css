@@ -1,0 +1,117 @@
+/* ==========================================================================
+   AORS — Minimalist Design System
+   ========================================================================== */
+
+:root {
+  --bg-primary: #0A0A0A;
+  --bg-surface: #111111;
+  --text-primary: #F5F5F5;
+  --text-secondary: #8A8A8A;
+  --border-color: #242424;
+  --accent: #4F46E5;
+  
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--text-primary);
+}
+
+nav a {
+  padding: 0.5rem;
+  margin: -0.5rem;
+}
+
+button {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  border-color: var(--text-secondary);
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+  border-color: #4338ca;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+/* Remove card/frosted-glass styles from previous version */
+.frosted-glass, .frosted-header, .frosted-glass-interactive {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Hide or reset specific overrides from previous interactions */
+div#root > div > main > div {
+  background-color: transparent !important;
+}
+
+div#root > div > main > button {
+  margin-top: 1.5rem !important;
+}
+
+main p {
+  text-align: justify;
+}
+
+
