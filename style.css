@@ -80,6 +80,14 @@ nav {
   padding-bottom: 1rem;
 }
 
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+}
+
 h1, h2, h3 {
   font-weight: 500;
   margin-top: 2rem;
@@ -113,6 +121,16 @@ div#root > div > main > button {
 main p {
   text-align: justify;
 }
+
+/* Apply centering styles as requested */
+div#root:nth-of-type(1) > div:nth-of-type(1) > main:nth-of-type(1) > button:nth-of-type(1) {
+  display: block;
+  margin: 0 auto;
+}
+div#root:nth-of-type(1) > div:nth-of-type(1) > main:nth-of-type(1) > h1:nth-of-type(1) {
+  text-align: center;
+}
+
 
 
 
